@@ -1,0 +1,254 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(228, 222, 222);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18;
+    box-sizing: border-box
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.home_page {
+    background-color: #28282B;
+}
+
+.header {
+    /* position: fixed; */
+    top: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav_links {
+    list-style: none;
+    text-align: center;
+}
+
+.nav_links li {
+    text-align: center;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    font-size: 16;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lightskyblue;
+    transition: all 0.2s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: violet;
+    opacity: 0.6;
+}
+
+.social_links {
+    list-style: none;
+    text-align: center;
+}
+
+.social_links li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.social_links li a {
+    color: lightskyblue;
+    transition: all 0.2s ease 0s;
+}
+
+.social_links li a:hover {
+    opacity: 0.6;
+}
+
+ion-icon {
+    color: lightskyblue;
+    font-size: 20px;
+}
+
+ion-icon:hover {
+    color: violet;
+}
+
+.img1 {
+    background-image: url(res/thanksgiving.jpeg);
+    position: relative;
+    left: 600px;
+    top: 100px;
+    width: 550px;
+    height: 550px;
+    background-size: 100%;
+}
+
+.title {
+    background-color: transparent;
+    color: lightskyblue;
+    position: relative;
+    bottom: 300px;
+    left: 300px;
+    font-size: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.byline {
+    background-color: transparent;
+    color: lightskyblue;
+    position: relative;
+    bottom: 300px;
+    left: 310px;
+    font-size: 16;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.head {
+    margin: 0;
+}
+
+.about_page {
+    background-color: lightskyblue;
+    height: 1000px;
+}
+
+.about_title {
+    background-color: transparent;
+    color: #28282B;
+    position: relative;
+    top: 70px;
+    left: 100px;
+    font-size: 80;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.line {
+    position: relative;
+    top: 75px;
+    left: 100px;
+    width: 10%;
+    height: 2px;
+    display: block;
+    background-color: #28282B;
+    border: none;
+}
+
+.about_content {
+    position: relative;
+    width: 50%;
+    top: 90px;
+    left: 100px;
+    color: #28282B;
+    font-size: 25;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.music_page {
+    background-color: #28282B;
+    height: 1000px;
+}
+
+.music_title {
+    background-color: transparent;
+    color: lightskyblue;
+    position: relative;
+    top: 70px;
+    left: 100px;
+    font-size: 80;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.line2 {
+    position: relative;
+    top: 75px;
+    left: 100px;
+    width: 10%;
+    height: 2px;
+    display: block;
+    background-color: lightskyblue;
+    border: none;
+}
+
+.music_content {
+    position: relative;
+    width: 50%;
+    top: 90px;
+    left: 100px;
+    color: lightskyblue;
+    font-size: 25;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.right_mind {
+    position: relative;
+    width: 450px;
+    height: 250px;
+    bottom: 220px;
+    right: 100px;
+    float: right;
+    border-radius: 25px;
+}
+
+.boxer {
+    position: relative;
+    width: 40%;
+    height: 335px;
+    top: 100px;
+    left: 350px;
+    float: right;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #171717;
+}
+
+.boxer iframe {
+    padding-top: 5px;
+    width: 100%;
+}
+
+.boxer p {
+    color: white;
+    font-size: 15;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.sultans {
+    position: relative;
+    width: 40%;
+    height: 335px;
+    float: left;
+    bottom: 235px;
+    left: 100px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #171717;
+}
+
+.sultans video {
+    padding-top: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.sultans p {
+    color: white;
+    font-size: 15;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    padding-top: 5px;
+}
