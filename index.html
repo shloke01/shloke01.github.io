@@ -8,66 +8,69 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <title>
-        Shloke Meresh
-    </title>
+    <title>Shloke Meresh</title>
+
 </head>
 
-<body>
+<body id="top">
+    <nav>
+        <ul class="nav_links">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#">Interests</a></li>
+            <li><a href="#music">Music</a></li>
+        </ul>
 
-    <div class="header">
 
-        <div class="nav_links">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Interests</a></li>
-                <li><a href="#music">Music</a></li>
-            </ul>
+        <ul class="social_links">
+            <li>
+                <a href="https://www.linkedin.com/in/shloke-meresh-4175a897/" target=_blank>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://github.com/shloke01" target=_blank>
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target=_blank>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target=_blank>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="burger">
+            <ion-icon class="burger" name="menu-outline"></ion-icon>
         </div>
+    </nav>
 
-
-        <div class="social_links">
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/shloke-meresh-4175a897/" target=_blank>
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://github.com/shloke01" target=_blank>
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" target=_blank>
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" target=_blank>
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-
-    <div class="home_page">
+    <div id="home" class="home_page">
         <div class="img1"></div>
+        <div class="home_text">
+            <h1 class="title">
+                Shloke <br> Meresh
+            </h1>
 
-        <h1 class="title">
-            Shloke <br> Meresh
-        </h1>
+            <hr class="line1">
 
-        <p class="byline">
-            Student | Developer | Musician
-        </p>
+            <p class="byline">
+                Student | Developer | Musician
+            </p>
+        </div>
     </div>
+
+    <!-- 
 
     <div id="about" class="about_page">
         <h1 class="about_title">About Me</h1>
@@ -78,21 +81,27 @@
         </p>
     </div>
 
-    <div class="education_page">
+    -->
+
+    <div id="education" class="education_page">
         <h1 class="education_title">Education</h1>
         <hr class="line2">
-        <p class="education_content">
+        <p class="education_text">
             <ul>
-                BA, Grinnell College <br> Currently enrolled, expected graduation May 2023 Majors: Computer Science, Economics Minor: Statistics GPA: 3.91/4
-            </ul>
-            <ul>
-                High School <br> Delhi Public School, R.K. Puram (New Delhi, India) Commerce stream: English, Math, Economics, Business Studies, Accountancy Grade 12 AISSCE board exams: 95.4%
-            </ul>
-            <ul>
-                Standardized tests <br> SAT: 1510/1600 SAT Math II Subject Test: 800/800 AP Microeconomics: 5/5
+                <li>
+                    <b>BA, Grinnell College</b><br> Expected graduation: May 2023 <br> Majors: Computer Science, Economics <br> Minor: Statistics <br> GPA: 3.91/4 <br> <br>
+                </li>
+                <li>
+                    <b>High School</b><br> Delhi Public School, R.K. Puram (New Delhi, India) <br> Commerce stream: English, Math, Economics, Business Studies, Accountancy <br> Grade 12 AISSCE board exams: 95.4% <br> <br>
+                </li>
+                <li>
+                    <b>Standardized tests</b><br> SAT: 1510/1600 <br> SAT Math II Subject Test: 800/800 <br> AP Microeconomics: 5/5 <br> <br>
+                </li>
             </ul>
         </p>
     </div>
+
+    <!--
 
     <div id="music" class="music_page">
         <h1 class="music_title">Music</h1>
@@ -119,11 +128,12 @@
                 Your browser does not support the video tag
             </video>
         </div>
-    </div>
+    </div> -->
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="app.js"></script>
 
 </body>
 
