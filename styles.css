@@ -1,0 +1,229 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #28282B;
+}
+
+.social_links {
+    margin-right: 1%;
+    margin-top: 1%;
+    float: right;
+}
+
+.social_links li {
+    display: inline-flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.social_links a {
+    text-decoration: none;
+    padding: 0px 5px;
+    letter-spacing: 2px;
+    color: lightskyblue;
+    line-height: 10vh;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+}
+
+.social_links li a:hover {
+    color: violet;
+    opacity: 0.6;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 90vh;
+    margin-top: 10vh;
+    padding: 0 20%;
+}
+
+.profile_img {
+    position: absolute;
+    background-image: url(res/profile.jpeg);
+    background-size: 100%;
+    text-align: left;
+    width: 35vw;
+    height: 35vw;
+}
+
+.home_text {
+    position: relative;
+    background-color: transparent;
+    right: 51%;
+}
+
+.title {
+    color: lightskyblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8vw;
+    font-weight: 550;
+}
+
+.line1 {
+    position: relative;
+    height: 2px;
+    width: 70%;
+    left: 6%;
+    background-color: lightskyblue;
+    border: none;
+    margin-bottom: 2vh;
+}
+
+.byline {
+    display: block;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lightskyblue;
+    font-size: 18px;
+    line-height: 7vh;
+    letter-spacing: 2.1px;
+    left: 2.5vw;
+    text-decoration: none;
+}
+
+.byline li a {
+    color: lightskyblue;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+}
+
+.byline li a:hover {
+    color: violet;
+    opacity: 0.6;
+}
+
+.studentLink,
+.developerLink,
+.musicianLink {
+    width: 15vw;
+    text-align: center;
+    --g: 10px;
+    --b: 0px;
+    --c: lightskyblue;
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg, var(--_c)) repeat-y;
+    background: var(--_g1) var(--_p, 25%) 0, var(--_g2) 0 var(--_p, 125%), var(--_g1) var(--_p, 125%) 100%, var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b), var(--b) 200%;
+    filter: grayscale(50%);
+    transition: 0.3s;
+}
+
+.studentLink:hover,
+.developerLink:hover,
+.musicianLink:hover {
+    --b: 3px;
+    --_p: 75%;
+    padding: 2vh;
+}
+
+.img_grinnell {
+    position: absolute;
+    background-image: url(res/grinnell.png);
+    background-size: 100%;
+    margin: 5% 35%;
+    width: 15%;
+    height: 21.5%;
+}
+
+.img_ait {
+    position: absolute;
+    margin: 8% 55%;
+    background-repeat: no-repeat;
+    background-image: url(res/ait.png);
+    object-fit: contain;
+    width: 50%;
+    height: 30%;
+}
+
+.student_text {
+    display: block;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20% 20% 20% 20%;
+    color: lightskyblue;
+    font-size: 18px;
+    font-weight: 20;
+    line-height: 5vh;
+    letter-spacing: 2.1px;
+    left: 2.5vw;
+    text-decoration: none;
+    text-align: center;
+}
+
+.devTitle {
+    margin-left: 6%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    color: lightskyblue;
+    font-size: 50px;
+}
+
+.line2 {
+    position: relative;
+    height: 2px;
+    width: 30%;
+    left: 6%;
+    background-color: lightskyblue;
+    border: none;
+    margin-bottom: 2vh;
+}
+
+.contents {
+    color: lightskyblue;
+    font-size: 18px;
+    margin-left: 6%;
+    list-style-type: square;
+}
+
+@media screen and (max-width:768px) {
+    .home {
+        padding: 30% 5%;
+        padding-bottom: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .profile_img {
+        width: 65vw;
+        height: 65vw;
+    }
+    .home_text {
+        position: relative;
+        right: 0%;
+        top: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title {
+        font-size: 12vw;
+        text-align: center;
+    }
+    .line1 {
+        align-self: center;
+        width: 80%;
+    }
+    .byline {
+        margin-left: 25%;
+        font-size: 15px;
+        text-align: center;
+    }
+}
