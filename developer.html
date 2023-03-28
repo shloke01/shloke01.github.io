@@ -13,36 +13,257 @@
 </head>
 
 <body>
-    <div class="workEx">
-        <h1 class="devTitle">Work Experience</h1>
-        <hr class="line2">
-        <div class="contents">
-            <ul>
-                <li>
-                    Wrote scripts to automate data transfer and transformation between FTP servers and GCP storage
-                </li>
-                <li>
-                    Developed SQL code generation templates that reduced lines of code for additional queries by 70%
-                </li>
-                <li>
-                    Developed ETL pipelines and stored procedures to prepare data for querying, analysis and dashboarding
-                </li>
-                <li>
-                    Created code templates to facilitate data integration between BigQuery and Looker for analytics team, eliminating the need for an intermediary
-                </li>
-                </li>
-            </ul>
+
+    <div class="social_links">
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/shloke-meresh-4175a897/" target=_blank>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://github.com/shloke01" target=_blank>
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/shloke01/" target=_blank>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <button class="sectionlinks" onclick="openTab(event, 'projects', 'section')" id='sectionDefaultOpen'>
+            <h1 class="devTitle"> Projects</h1>
+        </button>
+        <button class="sectionlinks" onclick="openTab(event, 'workEx', 'section')">
+            <h1 class="devTitle">Work Experience</h1>
+        </button>
+    </div>
+
+    <hr class="line4">
+
+    <div id="projects" class="sectioncontent">
+        <!-- <p class="projects_byline">
+            <a href="https://github.com/shloke01">(www.github.com/shloke01)</a>
+        </p> -->
+        <div class="project-container">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Cadenza', 'tab')" id="tabDefaultOpen">Cadenza</button>
+                <button class="tablinks" onclick="openTab(event, 'Systems Poker', 'tab')">Systems Poker</button>
+                <button class="tablinks" onclick="openTab(event, 'GAInES', 'tab')">GAInES</button>
+                <button class="tablinks" onclick="openTab(event, 'GenderGander', 'tab')">GenderGander</button>
+                <button class="tablinks" onclick="openTab(event, 'Password Cracker', 'tab')">Password Cracker</button>
+                <!-- <button class="tablinks" onclick="openTab(event, 'Soccer Simulator', 'tab')">Soccer Simulator</button> -->
+            </div>
+
+            <div id="Soccer Simulator" class="tabcontent">
+                <h3>Soccer Simulator</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Systems Poker" class="tabcontent">
+                <div class=row>
+                    <div class="tabText">
+                        <h2>Systems Poker</h2><br>
+                        <p>
+                            Ever been bored in the middle of a CS class, and wanted to secretly play poker with other friends in the class? Systems poker is the solution! (Kidding, don't use it in class). Systems poker allows users to fire up and play live poker over a LAN, using
+                            the terminal/console window. It was developed in C using distributed systems, threads, and thread synchronization.
+                        </p>
+                    </div>
+
+                    <div class="tabImg">
+                        <img src="res/poker.png" width="100%" \>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Cadenza" class="tabcontent">
+                <div class=row>
+                    <div class="tabText">
+                        <h2>Cadenza</h2><br>
+                        <p>
+                            We all have that one friend that posts a million Instagram stories every day, with screenshots of the music they're listening to. The problem? Not everybody cares! Cadenza is a solution for those who do. It is a social media app that allows users to log
+                            on, add friends, and post song recommendations. It is a way for people to share their favorite songs in a user-friendly and efficient way.
+                        </p>
+                    </div>
+
+                    <div class="tabImg">
+                        <img src="res/cadenza1.png" width="40%" class="cadenza" \>
+                        <img src="res/cadenza2.png" width="40%" class="cadenza" \>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Password Cracker" class="tabcontent">
+                <div class=row>
+                    <div class="tabText">
+                        <h2>Password Cracker</h2><br>
+                        <p>
+                            This is a brute-force password cracker that uses POSIX threads to quickly and efficiently unencrypt 6 character passwords which were hashed using MD5 encryption. It was written in C, and achieved the fastest time in the class, cracking 300 passwords in
+                            13.5 seconds.
+                        </p>
+                    </div>
+
+                    <div class="tabImg">
+                        <img src="res/password-cracker.png" width="100%" \>
+                    </div>
+                </div>
+            </div>
+
+            <div id="GAInES" class="tabcontent">
+                <div class=row>
+                    <div class="tabText">
+                        <h2>GAInES</h2>
+                        <p class="gaines_byline">
+                            <a href="https://gaines.shinyapps.io/_app_/" target=_blank>(www.gaines.shinyapps.io/_app_)</a>
+                        </p>
+                        <p>
+                            <br> GAInES, or Grinnell Artificial Intelligence and Ethics Showcase is a full-stack development project that aims to explore how copyright law and ethics are linked to artificial intelligence in complicated ways. It is setup
+                            as an interactive museum where users can interact with different exhibits to learn more about them.
+                        </p>
+                    </div>
+
+                    <div class="tabImg">
+                        <img src="res/gaines.png" width="100%">
+                    </div>
+                </div>
+            </div>
+
+            <div id="GenderGander" class="tabcontent">
+                <div class=row>
+                    <div class="tabText">
+                        <h2>GenderGander</h3>
+                            <p class="gaines_byline">
+                                <a href="https://gender-gander.shinyapps.io/myapp/" target=_blank>(www.gender-gander.shinyapps.io/myapp/)</a>
+                            </p>
+                            <p>
+                                <br> Gender inequality is a pressing social issue all around the globe. It is imperative for the general public to be cognizant of it, and match their perceptions of the extent of the problem to the reality. This app intends
+                                to raise awareness among the general public, as well as potentially provide insights to policymakers about relevant, influential variables that can help inform decision-making while attempting to combat the issue. This
+                                is an interactive app that seeks to answer the following questions:
+                                <ul class="indent">
+                                    <li>
+                                        In which countries is gender inequality most prevalent?
+                                    </li>
+                                    <li>
+                                        Is your perception of gender inequality aligned with the reality?
+                                    </li>
+                                    <li>
+                                        Is there any relationship between other the GGI and certain other indicators?
+                                    </li>
+                                </ul>
+                            </p>
+                    </div>
+                    <div class="tabImg">
+                        <img src="res/gender-gander.png" width="100%">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="projects">
-        <h1 class="devTitle"> Projects</h1>
-        <ol>
-            <li>first</li>
-        </ol>
+
+    <div id="workEx" class="sectioncontent">
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+                <div class="timeline-content">
+                    <h3>Data Engineering Intern, CapsicoHealth Inc. </h3>
+                    <ul class="indent">
+                        <li>
+                            Wrote scripts to automate data transfer and transformation between FTP servers and GCP storage
+                        </li>
+                        <li>
+                            Developed SQL code generation templates that reduced lines of code for additional queries by 70%
+                        </li>
+                        <li>
+                            Developed ETL pipelines and stored procedures to prepare data for querying, analysis and dashboarding
+                        </li>
+                        <li>
+                            Created code templates to facilitate data integration between BigQuery and Looker for analytics team, eliminating the need for an intermediary
+                        </li>
+                    </ul>
+                    <span class="time">Jun-Aug 2022</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <ion-icon name="analytics-outline"></ion-icon>
+                </div>
+                <div class="timeline-content">
+                    <h3>Data Science Research Assistant, Grinnell College</h3>
+                    <ul class="indent">
+                        <li>
+                            Cleaned, wrangled and manipulated raw field data from surveys of women’s time use and group norm activities in Ethiopia to prepare it for analysis
+                        </li>
+                        <li>
+                            Conducted econometric analyses to identify statistically significant time-use trends using multiple regression and hypothesis testing
+                        </li>
+                        <li>
+                            Set up an online collaborative development environment for professors and other research assistants
+                        </li>
+                        <li>
+                            Created informative data visualizations to identify and explain patterns in the data
+                        </li>
+                    </ul>
+                    <span class="time">Aug-Dec 2021</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+                <div class="timeline-content">
+                    <h3>Data Science Intern, CapsicoHealth Inc.</h3>
+                    <ul class="indent">
+                        <li>
+                            Developed predictive models around patient health using Google BigQuery ML tools, achieved a true positive rate of 94% in predicting hospital readmissions
+                        </li>
+                        <li>
+                            Created Looker dashboards with visualizations of trends in US Obesity and Diabetes data, provided to clients for use in developing preventive care measures
+                        </li>
+                        <li>
+                            Wrote SQL queries to filter, clean and create subsets of patient health data with 300 million+ records
+                        </li>
+                        <li>
+                            Documented workflows and created training modules that reduced employee onboarding time by 50%
+                        </li>
+                    </ul>
+                    <span class="time">Jun-Aug 2021</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <ion-icon name="book-outline"></ion-icon>
+                </div>
+                <div class="timeline-content">
+                    <h3>Computer Science Peer Tutor, Grinnell College</h3>
+                    <ul class="indent">
+                        <li>
+                            Assisted students with course material (projects/labs/assignments) for functional, procedural, and object-oriented programming classes
+                        </li>
+                        <li>
+                            Developed and communicated strategies with students to help them identify and resolve bugs in their code
+                        </li>
+                        <li>
+                            Provided professors with tutoring reports to help them modify/improve intro courses
+                        </li>
+                    </ul>
+                    <span class="time">Jan 2023-Present</span>
+                </div>
+            </div>
+        </div>
     </div>
 
-
+    <script src="myScript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

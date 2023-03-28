@@ -2,8 +2,13 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    list-style: none;
     box-sizing: border-box
+}
+
+ :root {
+    --prim: #28282B;
+    --sec: lightskyblue;
+    --third: violet;
 }
 
 html,
@@ -11,8 +16,20 @@ body {
     scroll-behavior: smooth;
     width: 100%;
     overflow-x: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #28282B;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--prim);
+}
+
+h1 {
+    font-size: 30%;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+.indent {
+    padding-left: 5%;
+    list-style-type: square;
 }
 
 .social_links {
@@ -31,14 +48,14 @@ body {
     text-decoration: none;
     padding: 0px 5px;
     letter-spacing: 2px;
-    color: lightskyblue;
+    color: var(--sec);
     line-height: 10vh;
     transition: all 0.2s ease 0s;
     cursor: pointer;
 }
 
 .social_links li a:hover {
-    color: violet;
+    color: var(--third);
     opacity: 0.6;
 }
 
@@ -59,6 +76,13 @@ body {
     text-align: left;
     width: 35vw;
     height: 35vw;
+    border-radius: 3%;
+}
+
+.info:hover {
+    filter: blur(4px);
+    border-radius: 3%;
+    margin-top: 100px;
 }
 
 .home_text {
@@ -68,10 +92,10 @@ body {
 }
 
 .title {
-    color: lightskyblue;
+    color: var(--sec);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 8vw;
-    font-weight: 550;
+    font-weight: 300;
 }
 
 .line1 {
@@ -79,7 +103,7 @@ body {
     height: 2px;
     width: 70%;
     left: 6%;
-    background-color: lightskyblue;
+    background-color: var(--sec);
     border: none;
     margin-bottom: 2vh;
 }
@@ -88,22 +112,23 @@ body {
     display: block;
     position: relative;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: lightskyblue;
+    color: var(--sec);
     font-size: 18px;
     line-height: 7vh;
     letter-spacing: 2.1px;
     left: 2.5vw;
     text-decoration: none;
+    list-style-type: none;
 }
 
 .byline li a {
-    color: lightskyblue;
+    color: var(--sec);
     transition: all 0.2s ease 0s;
     cursor: pointer;
 }
 
 .byline li a:hover {
-    color: violet;
+    color: var(--third);
     opacity: 0.6;
 }
 
@@ -114,7 +139,7 @@ body {
     text-align: center;
     --g: 10px;
     --b: 0px;
-    --c: lightskyblue;
+    --c: var(--sec);
     --_c: #0000 0 25%, var(--c) 0 50%;
     --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
     --_g2: repeating-linear-gradient(180deg, var(--_c)) repeat-y;
@@ -135,6 +160,7 @@ body {
 .img_grinnell {
     position: absolute;
     background-image: url(res/grinnell.png);
+    background-repeat: no-repeat;
     background-size: 100%;
     margin: 5% 35%;
     width: 15%;
@@ -151,26 +177,60 @@ body {
     height: 30%;
 }
 
+.about,
+.workEx,
+.projects {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}
+
+.resumeButton {
+    color: var(--sec);
+    background: inherit;
+    margin: 1%;
+    border: 2px solid var(--sec);
+    padding: 1%
+}
+
+.resumeButton:hover {
+    cursor: pointer;
+    color: var(--third);
+    border: 2px solid var(--third);
+    opacity: 0.6;
+}
+
 .student_text {
     display: block;
     position: relative;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20% 20% 20% 20%;
-    color: lightskyblue;
+    color: var(--sec);
     font-size: 18px;
     font-weight: 20;
     line-height: 5vh;
-    letter-spacing: 2.1px;
+    letter-spacing: 2;
     left: 2.5vw;
     text-decoration: none;
     text-align: center;
+}
+
+.student_text a {
+    color: white;
+}
+
+.student_text a:hover {
+    color: var(--third);
+    opacity: 0.6;
 }
 
 .devTitle {
     margin-left: 6%;
     margin-top: 5%;
     margin-bottom: 1%;
-    color: lightskyblue;
+    color: var(--sec);
     font-size: 50px;
 }
 
@@ -179,16 +239,178 @@ body {
     height: 2px;
     width: 30%;
     left: 6%;
-    background-color: lightskyblue;
+    background-color: var(--sec);
     border: none;
     margin-bottom: 2vh;
 }
 
 .contents {
-    color: lightskyblue;
-    font-size: 18px;
+    color: var(--sec);
+    font-size: 15px;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 2;
+    letter-spacing: 2;
+}
+
+.projects_byline {
     margin-left: 6%;
-    list-style-type: square;
+    margin-bottom: 2%;
+    text-decoration: underline;
+}
+
+.projects_byline a {
+    color: var(--sec);
+}
+
+.projects_byline a:hover {
+    color: var(--third);
+    opacity: 0.6;
+}
+
+.gaines_byline a {
+    color: var(--sec);
+    text-decoration: underline;
+}
+
+.gaines_byline a:hover {
+    color: var(--third);
+    opacity: 0.6;
+}
+
+.project-container {
+    display: flex;
+}
+
+.section {
+    display: flex;
+    width: fit-content;
+    margin-top: 5%;
+    margin-left: 10%;
+    overflow: hidden;
+}
+
+.section button {
+    width: 40vw;
+    /* font-size: 1vw; */
+    background-color: inherit;
+    float: left;
+    outline: none;
+    border: none;
+    color: var(--sec);
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.section button.active {
+    border: 2px solid var(--sec);
+    border-bottom: none;
+}
+
+.section button:hover {
+    background-color: var(--third);
+    opacity: 0.5;
+}
+
+.section button:hover h1 {
+    color: var(--prim);
+}
+
+.line4 {
+    position: relative;
+    height: 2px;
+    width: 80vw;
+    left: 10%;
+    background-color: var(--sec);
+    border: none;
+    margin-bottom: 1vh;
+}
+
+.tab {
+    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    overflow: hidden;
+}
+
+.tab ul {
+    list-style-type: none;
+}
+
+.tab button {
+    width: 12vw;
+    font-size: 1vw;
+    background-color: inherit;
+    float: left;
+    outline: none;
+    border: none;
+    color: var(--sec);
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button.active {
+    background-color: var(--sec);
+    color: var(--prim);
+}
+
+.tab button:hover {
+    background-color: var(--third);
+    opacity: 0.5;
+    color: var(--prim);
+}
+
+.line3 {
+    position: relative;
+    height: 2px;
+    width: 20%;
+    left: 12%;
+    background-color: var(--sec);
+    border: none;
+    transform: rotate(90deg);
+}
+
+.tabcontent {
+    flex: 80%;
+    margin-top: 5%;
+    margin-right: 10%;
+    display: flex;
+    height: 60vh;
+    /* padding-top: 2%; */
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 1px solid var(--sec);
+    border-top: none;
+    color: var(--sec);
+}
+
+.row {
+    display: flex;
+    margin: auto;
+}
+
+.tabText {
+    flex: 40%;
+    line-height: 3vh;
+}
+
+.tabImg {
+    padding-left: 3%;
+    flex: 60%;
+}
+
+.cadenza {
+    border: solid 2px black;
+    border-radius: 9%;
 }
 
 @media screen and (max-width:768px) {
@@ -226,4 +448,133 @@ body {
         font-size: 15px;
         text-align: center;
     }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    margin: 15%;
+    margin-top: 5%;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--sec);
+    margin-left: -1px;
+}
+
+.timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: inherit;
+    z-index: 1;
+}
+
+.timeline-icon ion-icon {
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--sec);
+}
+
+.timeline-content {
+    margin-left: 60px;
+    background-color: inherit;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 5px 10px var(--sec);
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-10px);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: var(--sec);
+}
+
+.timeline-content {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: var(--sec);
+}
+
+.timeline-content .time {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 14px;
+    color: #999;
+    text-align: right;
+    display: block;
 }
