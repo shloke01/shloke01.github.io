@@ -54,6 +54,7 @@
         <div class="project-container">
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'Cadenza', 'tab')" id="tabDefaultOpen">Cadenza</button>
+                <button class="tablinks" onclick="openTab(event, 'CCL Generator', 'tab')">Cover Letter Generator</button>
                 <button class="tablinks" onclick="openTab(event, 'Systems Poker', 'tab')">Systems Poker</button>
                 <button class="tablinks" onclick="openTab(event, 'GAInES', 'tab')">GAInES</button>
                 <button class="tablinks" onclick="openTab(event, 'GenderGander', 'tab')">GenderGander</button>
@@ -61,9 +62,21 @@
                 <!-- <button class="tablinks" onclick="openTab(event, 'Soccer Simulator', 'tab')">Soccer Simulator</button> -->
             </div>
 
-            <div id="Soccer Simulator" class="tabcontent">
-                <h3>Soccer Simulator</h3>
-                <p>London is the capital city of England.</p>
+            <div id="CCL Generator" class="tabcontent">
+                <div class=row>
+                    <div class="tabText">
+                        <h2>Custom Cover Letter Generator</h2><br>
+                        <p>
+                            Cover letters are obsolete, but unfortunately, a large number of companies still require them as part of their job applications. This webapp is designed to relieve you of the tedious task that is writing a cover letter. Simply upload a pdf of your resume,
+                            provide a link to the job description for the position you want to apply to, and a neat cover letter, tailored to your resume and the posting, will be ready in under a minute. Created using Python and Flask, leveraging a large
+                            language model (OpenAI's ChatGPT).
+                        </p>
+                    </div>
+
+                    <div class="tabImg">
+                        <img src="res/ccl-generator.png" width="100%" \>
+                    </div>
+                </div>
             </div>
 
             <div id="Systems Poker" class="tabcontent">
