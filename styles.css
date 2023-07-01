@@ -188,11 +188,14 @@ h1 {
 }
 
 .resumeButton {
+    display: block;
+    position: relative;
+    left: 47%;
     color: var(--sec);
     background: inherit;
     margin: 1%;
     border: 2px solid var(--sec);
-    padding: 1%
+    padding: 1.5%;
 }
 
 .resumeButton:hover {
@@ -206,7 +209,7 @@ h1 {
     display: block;
     position: relative;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20% 20% 20% 20%;
+    padding: 20% 20% 5% 20%;
     color: var(--sec);
     font-size: 18px;
     font-weight: 20;
