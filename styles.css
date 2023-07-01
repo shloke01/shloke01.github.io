@@ -218,7 +218,8 @@ h1 {
 }
 
 .student_text a {
-    color: white;
+    text-decoration: underline;
+    color: inherit;
 }
 
 .student_text a:hover {
