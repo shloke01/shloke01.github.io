@@ -407,6 +407,16 @@ h1 {
     line-height: 3vh;
 }
 
+.tabText a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.tabText a:hover {
+    color: var(--third);
+    opacity: 0.6;
+}
+
 .tabImg {
     padding-left: 3%;
     flex: 70%;
