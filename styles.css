@@ -339,7 +339,7 @@ h1 {
     flex: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    text-align: left;
     margin-top: 5%;
     margin-left: 10%;
     padding-top: 5%;
@@ -353,14 +353,17 @@ h1 {
 
 .tab button {
     width: 12vw;
+    height: 8vh;
     font-size: 1vw;
     background-color: inherit;
     float: left;
+    text-align: left;
+    vertical-align: middle;
     outline: none;
     border: none;
     color: var(--sec);
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 1vw 2vw;
     transition: 0.3s;
 }
 
